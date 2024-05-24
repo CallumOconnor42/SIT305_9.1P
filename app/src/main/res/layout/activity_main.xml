@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btn_create_listing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create Listing"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"/>
+
+    <Button
+        android:id="@+id/btn_show_listings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Listings"
+        android:layout_below="@id/btn_create_listing"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/btn_show_on_map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SHOW ON MAP"
+        android:layout_below="@id/btn_show_listings"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+</RelativeLayout>

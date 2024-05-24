@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp">
+
+        <RadioButton
+            android:id="@+id/radio_lost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lost"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/radio_found"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Found" />
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/edit_text_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radio_group"
+        android:layout_margin="16dp"
+        android:layout_marginTop="16dp"
+        android:hint="Name" />
+
+    <EditText
+        android:id="@+id/edit_text_phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone Number"
+        android:layout_below="@id/edit_text_name"
+        android:layout_margin="16dp"/>
+
+    <EditText
+        android:id="@+id/edit_text_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Description"
+        android:layout_below="@id/edit_text_phone_number"
+        android:layout_margin="16dp"/>
+
+    <EditText
+        android:id="@+id/edit_text_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Date"
+        android:layout_below="@id/edit_text_description"
+        android:layout_margin="16dp"/>
+
+
+    <fragment
+        android:id="@+id/autocomplete_fragment"
+        android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_text_date"
+        android:layout_margin="16dp"/>
+
+    <Button
+        android:id="@+id/btn_get_current_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Current Location"
+        android:layout_below="@id/autocomplete_fragment"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/btn_save_listing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_get_current_location"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Save" />
+
+</RelativeLayout>
+
+
+
+
+

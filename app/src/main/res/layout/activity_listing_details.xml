@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/text_view_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name:"
+        android:layout_margin="16dp"/>
+
+    <TextView
+        android:id="@+id/text_view_phone_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone Number:"
+        android:layout_below="@id/text_view_name"
+        android:layout_margin="16dp"/>
+
+    <TextView
+        android:id="@+id/text_view_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description:"
+        android:layout_below="@id/text_view_phone_number"
+        android:layout_margin="16dp"/>
+
+    <TextView
+        android:id="@+id/text_view_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date:"
+        android:layout_below="@id/text_view_description"
+        android:layout_margin="16dp"/>
+
+    <TextView
+        android:id="@+id/text_view_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location:"
+        android:layout_below="@id/text_view_date"
+        android:layout_margin="16dp"/>
+
+    <Button
+        android:id="@+id/btn_remove_listing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_view_name"
+        android:layout_marginTop="312dp"
+        android:text="Remove" />
+
+</RelativeLayout>
